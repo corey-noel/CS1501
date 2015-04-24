@@ -1,0 +1,52 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Corey Noel
+
+Lecture section:  MWF 3PM
+
+Recitation day and time: Fri 11 AM 
+
+Assignment #:  4
+
+Program due date: 3/29/2015 
+
+Handed in date:  3/29/2015
+
+Source code file name(s): 
+AdjacencyList.java
+AdjacencyNode.java
+Airline.java
+
+Other file name(s) (if relevant):
+
+
+
+
+
+
+
+Does your program run without error?: No
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+Minimum-spanning tree does not yield the correct result
+
+
+
+
+
+
+Additional comments to the grader:
+
+
+
+
+
+
+

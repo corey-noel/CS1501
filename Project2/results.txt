@@ -1,0 +1,152 @@
+COMPRESSION PERFORMANCE
+
+Uncompressed
+
+File                Size
+-------------------------------
+all.tar             (2.89   MB)
+assig2.doc          (85.00  KB)
+bmps.tar            (1.05   MB)
+code.txt            (70.60  KB)
+code2.txt           (56.30  KB)
+edit.exe            (230.00 KB)
+frosty.jpg          (123.00 KB)
+gone_fishing.bmps   (16.90  KB)
+large.txt           (1.16   MB)
+Lego-Big.gif        (91.10  KB)
+medium.txt          (24.80  KB)
+texts.tar           (1.31   MB)
+wacky.bmp           (900.00 KB)
+winnt256.bmp        (153.00 KB)
+
+
+Compression Method #1:
+Fixed width codewords
+Via LZW.java
+
+File                Uncompressed    Compressed      Ratio
+---------------------------------------------------------
+all.tar             (2.89   MB)     (400.00 KB)     0.135
+assig2.doc          (85.00  KB)     (72.80  KB)     0.856
+bmps.tar            (1.05   MB)     (903.00 KB)     0.840
+code.txt            (70.60  KB)     (30.20  KB)     0.428
+code2.txt           (56.30  KB)     (23.50  KB)     0.417
+edit.exe            (230.00 KB)     (244.0  KB)     1.061 (!!!)
+frosty.jpg          (123.00 KB)     (173.0  KB)     1.407 (!!!)
+gone_fishing.bmps   (16.90  KB)     (9.06   KB)     0.536 (!!!)
+large.txt           (1.16   MB)     (591.00 KB)     0.498 
+Lego-Big.gif        (91.10  KB)     (125.00 KB)     1.372 (!!!)
+medium.txt          (24.80  KB)     (12.80  KB)     0.516
+texts.tar           (1.31   MB)     (988.00 KB)     0.737
+wacky.bmp           (900.00 KB)     (4.20   KB)     0.005 
+winnt256.bmp        (153.00 KB)     (155.00 KB)     1.013 (!!!)
+
+Overall ratio:      0.705
+
+
+
+Compression Method #2: 
+Variable width codewords
+Via MyLZW.java in "n" mode
+
+File                Uncompressed    Compressed      Ratio
+---------------------------------------------------------
+all.tar             (2.89   MB)     (568.00 KB)     0.192
+assig2.doc          (85.00  KB)     (39.10  KB)     0.460
+bmps.tar            (1.05   MB)     (79.00  KB)     0.073
+code.txt            (70.60  KB)     (23.90  KB)     0.339
+code2.txt           (56.30  KB)     (20.00  KB)     0.355
+edit.exe            (230.00 KB)     (152.00 KB)     0.661
+frosty.jpg          (123.00 KB)     (159.00 KB)     1.293 (!!!)
+gone_fishing.bmps   (16.90  KB)     (8.75   KB)     0.512
+large.txt           (1.16   MB)     (490.00 KB)     0.413
+Lego-Big.gif        (91.10  KB)     (119.00 KB)     1.306 (!!!)
+medium.txt          (24.80  KB)     (12.20  KB)     0.492
+texts.tar           (1.31   MB)     (583.00 KB)     0.435
+wacky.bmp           (900.00 KB)     (3.85   KB)     0.004
+winnt256.bmp        (153.00 KB)     (61.40  KB)     0.401
+
+Overall ratio:      0.495
+
+
+
+Compression Method #3: 
+Variable width codewords, resetting on full codebook
+Via MyLZW.java in "r" mode
+
+File                Uncompressed    Compressed      Ratio
+---------------------------------------------------------
+all.tar             (2.89   MB)     (1.19   MB)     0.412
+assig2.doc          (85.00  KB)     (39.10  KB)     0.460
+bmps.tar            (1.05   MB)     (79.00  KB)     0.364
+code.txt            (70.60  KB)     (23.90  KB)     0.339
+code2.txt           (56.30  KB)     (20.00  KB)     0.355
+edit.exe            (230.00 KB)     (154.00 KB)     0.670
+frosty.jpg          (123.00 KB)     (174.00 KB)     1.415 (!!!)
+gone_fishing.bmps   (16.90  KB)     (8.75   KB)     0.518
+large.txt           (1.16   MB)     (544.00 KB)     0.458
+Lego-Big.gif        (91.10  KB)     (119.00 KB)     1.306 (!!!)
+medium.txt          (24.80  KB)     (12.20  KB)     0.492 
+texts.tar           (1.31   MB)     (607.00 KB)     0.452
+wacky.bmp           (900.00 KB)     (3.85   KB)     0.004
+winnt256.bmp        (153.00 KB)     (61.40  KB)     0.401
+
+Overall ratio:      0.546
+
+
+
+Compression Method #4:
+Variable width codewords, monitoring, and resetting on ratio of rations above 1.1
+Via MyLZW in "m" mode
+
+File                Uncompressed    Compressed      Ratio
+---------------------------------------------------------
+all.tar             (2.89   MB)     (1.20   MB)     0.415
+assig2.doc          (85.00  KB)     (39.10  KB)     0.460
+bmps.tar            (1.05   MB)     (79.00  KB)     0.073
+code.txt            (70.60  KB)     (23.90  KB)     0.339
+code2.txt           (56.30  KB)     (20.00  KB)     0.355
+edit.exe            (230.00 KB)     (152.00 KB)     0.661
+frosty.jpg          (123.00 KB)     (159.00 KB)     1.293 (!!!)
+gone_fishing.bmps   (16.90  KB)     (8.75   KB)     0.518
+large.txt           (1.16   MB)     (490.00 KB)     0.413
+Lego-Big.gif        (91.10  KB)     (119.00 KB)     1.308 (!!!)
+medium.txt          (24.80  KB)     (12.20  KB)     0.492
+texts.tar           (1.31   MB)     (583.00 KB)     0.435
+wacky.bmp           (900.00 KB)     (3.85   KB)     0.004
+winnt256.bmp        (153.00 KB)     (61.40  KB)     0.401
+
+Overall ratio:      0.512
+
+
+
+Compression Method #5:
+ZIP
+Via PeaZip
+
+File                Uncompressed    Compressed      Ratio
+---------------------------------------------------------
+all.tar             (2.89   MB)     (911.00 KB)     0.308
+assig2.doc          (85.00  KB)     (22.40  KB)     0.264
+bmps.tar            (1.05   MB)     (57.00  KB)     0.053
+code.txt            (70.60  KB)     (14.30  KB)     0.203
+code2.txt           (56.30  KB)     (12.60  KB)     0.224
+edit.exe            (230.00 KB)     (118.00 KB)     0.513
+frosty.jpg          (123.00 KB)     (123.00 KB)     1.000 (???)
+gone_fishing.bmps   (16.90  KB)     (8.32   KB)     0.492
+large.txt           (1.16   MB)     (460.00 KB)     0.387
+Lego-Big.gif        (91.10  KB)     (90.40  KB)     0.992
+medium.txt          (24.80  KB)     (10.30  KB)     0.415
+texts.tar           (1.31   MB)     (497.00 KB)     0.370
+wacky.bmp           (900.00 KB)     (3.23   KB)     0.004
+winnt256.bmp        (153.00 KB)     (45.20  KB)     0.295
+
+Overall ratio:      0.394
+
+
+Conclusions:
+Frosty.jpg is haunted
+ZIP is good
+LZW sucks
+I wish I had read the things about substring earlier
+Exponential time is not your friend

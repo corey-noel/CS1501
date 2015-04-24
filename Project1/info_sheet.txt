@@ -1,0 +1,60 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:                       Corey Noel
+
+Lecture section:            24601
+
+Recitation day and time:    Fri 11 AM
+
+Assignment #:               1
+
+Program due date:           2/1/2015
+
+Handed in date:             2/1/2015
+
+Source code file name(s):
+
+Written:
+Board.java
+MyBoggle.java
+DictionaryNode.java
+DLBDictionary.java
+
+Given:
+DictionaryInterface.java
+SimpleDictionary.java
+
+Other file name(s) (if relevant):
+
+board1.txt
+board2.txt
+board3.txt
+board4.txt
+board5.txt
+board6.txt
+
+Does your program run without error?:
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+
+
+
+Additional comments to the grader:
+
+
+
+
+
+
+
